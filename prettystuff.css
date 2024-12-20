@@ -493,3 +493,77 @@ h3{
 .card-list li b {
   color: #27496d;
 }
+
+
+
+
+/* Adjust font sizes and layout for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Navbar */
+  .navbar-menu {
+    flex-direction: column;
+    padding: 1rem 0;
+    background: #27496d; /* Solid background for better readability */
+  }
+
+  .navbar-item {
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem; /* Larger for easier tapping */
+  }
+
+  /* Hero Section */
+  .hero {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 1rem;
+  }
+
+  .intro-container {
+    padding: 1.5rem; /* Reduce padding */
+    text-align: center; /* Center align content */
+  }
+
+  .intro-title {
+    font-size: 1.8rem; /* Reduce font size */
+  }
+
+  .intro-subtitle {
+    font-size: 1.2rem;
+  }
+
+  /* Adjust buttons */
+  .buttons-container {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 1rem; /* Add spacing between buttons */
+  }
+
+  .buttons-container .button {
+    width: 100%; /* Full width for easier tapping */
+  }
+
+  /* About Section */
+  .about .card-content img {
+    width: 100%; /* Responsive images */
+    max-width: 150px; /* Limit maximum width */
+    margin: 0 auto; /* Center align image */
+  }
+
+  .about .card-content {
+    padding: 1rem; /* Reduce padding */
+  }
+
+  /* Publications Section */
+  #publications ol {
+    padding-left: 0;
+  }
+
+  #publications li {
+    font-size: 0.9rem; /* Slightly smaller text */
+    line-height: 1.5;
+  }
+
+  /* Cards */
+  .card-tutoring {
+    flex: 1 1 100%; /* Full width for small screens */
+    max-width: 100%;
+  }
+}
