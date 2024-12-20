@@ -25,264 +25,49 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <!-- Bulma Version 0.8.x-->
     <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
-    <link rel="stylesheet" type="text/css" href="../css/personal.css">
-    <link rel="stylesheet" href="tutoring.css">
+    <link rel="stylesheet" href="prettystuff.css">
     <script async type="text/javascript" src="../js/bulma.js"></script>
 </head>
 
-<style>
-h3{
-  text-align:center;
-}
-.X{
-  margin: auto;
-  padding: 1% 2%;
-  max-width: 1440px;
-  border-radius: 5px;
-  background: #ecf0f1;
-  box-shadow: 0 2px 6px 0 rgba(0,0,0, .3);
-}
-.SG{
-  margin: 0;
-  padding: 0;
-  text-align: center;
-}
-.SG .sgLi{
-  min-width: 24%;
-  margin: 2% .35%;
-  display: inline-flex;
-  box-shadow: 0 2px 4px rgba(0,0,0, .2);
-  color: #2c3e50;
-  font-size: 18px;
-  line-height: 30px;
-  text-align: justify;
-  letter-spacing: 1px;
-  font-family: 'Raleway', serif;
-}
-.SG .sgLi:hover{
-  box-shadow:0 5px 10px rgba(0,0,0,.15);}
-.SG .box{
-  width: 100%;
-  height: 200vh;
-  /* padding: 1% 2%; */
-  background: #fff;
-  min-height: 200px;
-  max-height: 330px;
-  box-sizing: border-box;
-  padding-left: 25px;
-}
 
-.s2{list-style-type: circle;}
+<nav class="navbar is-fixed-top">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
 
-@media (max-width: 970px){
-  .SG .sgLi{width: 180px;}}
-@media (max-width: 425px){
-  .SG .sgLi{width: 100%;}
-}
-
-#InfoBlocks
-{
-    background-color: #F0F8FF;
-    margin: 10px 20px;
-    padding: 20px;
-}
+  <div id="navbarBasicExample" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item" href="#about">About</a>
+      <a class="navbar-item" href="#publications">Publications</a>
+      <a class="navbar-item" href="#tutoring">Tutoring</a>
+    </div>
+  </div>
+</nav>
 
 
-.bn3637 {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0.7rem 2rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 18px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  backface-visibility: hidden;
-  border: 0.3rem solid transparent;
-  border-radius: 3rem;
-}
+  <section class="hero">
+    <div class="hero-body">
+      <div class="intro-container">
+        <h1 class="intro-title">Nick Kroeger</h1>
+        <h2 class="intro-subtitle">Computer Science PhD Student</h2>
+        <p class="intro-tagline">(He/Him)</p>
+        <p class="intro-description">
+          Advancing <b>Neural Network Interpretability</b> <br>
+          and <b>Robustness</b>
+        </p>
+        <a href="#about" class="intro-btn">Learn More About Me</a>
+      </div>
+    </div>
+  </section>
 
-.bn37 {
-  border-color: transparent;
-  background-color: #76abff;
-  color: #000;
-  transition: transform 0.2s cubic-bezier(0.235, 0, 0.05, 0.95);
-}
-
-.bn37:hover {
-  transform: perspective(1px) scale3d(1.044, 1.044, 1) translateZ(0) !important;
-}
-
-
-.card-tutoring-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  text-align: center;
-  font-family: 'Arial', sans-serif;
-  color: #333;
-}
-
-
-.cards-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 20px;
-}
-
-
-.card-tutoring {
-  background: #FFF;
-  border-radius: 8px;
-  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
-  padding: 20px;
-  margin: 10px;
-  max-width: 33%;
-  background-color: #F2F8FF;
-}
-
-.card-tutoring h2 {
-  font-size: 1.25rem;
-  color: #27496d;
-  font-weight: bold;
-  margin-bottom: 15px;
-  padding-bottom: 5px;
-  border-bottom: 2px solid #00909e;
-}
-
-.card-tutoring ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.card-tutoring li {
-  font-size: 1rem;
-  line-height: 1.5;
-  margin-bottom: 10px;
-}
-
-.card-tutoring li:last-child {
-  margin-bottom: 0;
-}
-
-.card-tutoring li span {
-  font-style: italic;
-  font-weight: lighter;
-}
-
-.availability-pricing p {
-  font-size: 1rem;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.availability-pricing p span {
-  font-weight: bold;
-}
-
-
-.cta-buttons {
-  margin-top: 30px;
-}
-
-.cta-buttons button {
-  background-color: #5b9bd5;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: 600;
-  transition: background-color 0.3s ease;
-}
-
-.cta-buttons button:hover {
-  background-color: #4a8cc7;
-}
-
-@media (max-width: 768px) {
-  .cards-container {
-    flex-direction: column;
-  }
-}
-
-</style>
-
-<body>
-    <!-- Navigation bar -->
-    <nav class="navbar is-link is-fixed-top">
-        <div class="navbar-brand">
-            <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-        </div>
-
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
-            <div class="navbar-end">
-
-                <a class="navbar-item" href="#about">
-                    <span class="icon">
-                        <i class="fas fa-info"></i>
-                    </span>
-                    <span>About</span>
-                </a>
-
-                <a class="navbar-item" href="#publications">
-                    <span class="icon">
-                        <i class="fas fa-th-list"></i>
-                    </span>
-                    <span>Publications</span>
-                </a>
-
-                <a class="navbar-item" href="#tutoring">
-                  <span class="icon">
-                    <i class="fas fa-bars"></i>
-                  </span>
-                  <span>Tutoring</span>
-                </a>
-
-                <!-- <a class="navbar-item" href="#learning">
-                    <span class="icon">
-                        <i class="fas fa-file-alt"></i>
-                    </span>
-                    <span>What am I learning?</span>
-                </a> -->
-
-            </div>
-        </div>
-    </nav>
-
-    <!-- Header -->
-    <section class="hero is-link is-fullheight is-fullheight-with-navbar">
-        <div class="hero-body">
-            <div class="container">Hello! I am
-                <h1 class="title is-1">
-                    Nick Kroeger
-                </h1>
-                <h2 class="subtitle is-3">
-                    Computer Science PhD Student<br>(He/Him)
-                </h2>
-                <br><br>
-                <h4 class="subtitle is-3">
-                    I hope to advance methods for <strong>machine learning interpretability</strong> and <strong>outlier detection</strong>, <br>
-                    within <strong>deep learning</strong>, <strong>visual reasoning</strong>, and <strong>acoustics</strong>.
-                    <h4>
-            </div>
-        </div>
-    </section>
 
     <!-- About -->
     <section class="section" id="about">
         <!-- Title -->
-        <div class="section-heading">
-            <h3 class="title is-2">About Me</h3>
-        </div>
-
         <div class="columns has-same-height is-gapless">
             <div class="column">
                 <!-- Profile -->
@@ -290,7 +75,7 @@ h3{
                     <div class="card-content">
 
                         <img src="NickHeadshot.jpeg" alt="Headshot" style="width:250px; float: left; padding: 0 15px">
-                        <h3 class="title is-4">Profile</h3>
+                        <h3 class="title is-4">About Me</h3>
                         <div class="container">
                             <p>I'm a Computer Science PhD Student at the University of Florida studying Machine Learning.
                                 I completed my M.S. (2021) and B.S. (2018) in Computer Science and Minor in Music Performance (Saxophone) at the
@@ -304,8 +89,6 @@ h3{
                                 <strong>Research Interests:</strong>
                                 Interpretable Machine Learning, Neural Networks, Outlier Detection, and Underwater Acoustics.
 
-
-
                         </div>
                         <div class="content">
                             <table class="table-profile">
@@ -315,7 +98,8 @@ h3{
                                 </tr>
                                 <tr>
                                     <td>Research Lab:</td>
-                                    <td><a href="https://faculty.eng.ufl.edu/computing-for-life/people/" target="_blank">Computing For Life</a><br>
+                                    <td><b>Former:</b> Dr. Paul Gader's <a href="https://faculty.eng.ufl.edu/computing-for-life/people/" target="_blank">Computing For Life</a><br>
+                                      <b>Current:</b> Dr. Vincent Bindschaedler's <a href="https://vbinds.ch/" target="_blank">Trustworthy Machine Learning</a><br>
                                         University of Florida<br>
                                         Computer and Information Science and Engineering<br>
                                         Gainesville, FL 32608</td>
@@ -330,445 +114,117 @@ h3{
                             </table>
                         </div>
                         <br>
-                        <div class="buttons has-addons is-centered">
-                            <a href="Resume.pdf" target="_blank" class="button is-link is-medium">
-                                <span class="icon">
-                                    <i class="fas fa-file-alt"></i>
-                                </span>
-                                <span>My CV</span>
-                            </a>
+                        <div class="buttons-container">
+                          <a href="Resume.pdf" target="_blank" class="button is-link is-medium">
+                            <span class="icon"><i class="fas fa-file-alt"></i></span>
+                            <span>My CV</span>
+                          </a>
+                          <a href="https://github.com/kroegern1" target="_blank" class="button is-link is-medium">
+                            <span class="icon"><i class="fab fa-github"></i></span>
+                            <span>GitHub</span>
+                          </a>
+                          <a href="https://twitter.com/NickKroeger1" target="_blank" class="button is-link is-medium">
+                            <span class="icon"><i class="fab fa-twitter"></i></span>
+                            <span>Twitter / X</span>
+                          </a>
                         </div>
-                        <div class="buttons has-addons is-centered">
-                            <a href="https://github.com/kroegern1" target="_blank" class="button is-link">Github</a>
-                            <a href="https://twitter.com/NickKroeger1" target="_blank" class="button is-link">Twitter</a>
-                        </div>
+
+
                     </div>
                 </div>
             </div>
 
         </div>
     </section>
-
-    <!-- Skills tags -->
-    <!-- <br>
-        <div class="tags custom-tags">
-          <span class="tag is-light">Node.js</span><span class="tag is-light">Express.js</span><span class="tag is-light">VueJS</span><span
-            class="tag is-light">JavaScript</span><span class="tag is-light">HTML5</span><span class="tag is-light">Canvas</span><span
-            class="tag is-light">CSS3</span><span class="tag is-light">Bulma</span><span class="tag is-light">Bootstrap</span><span
-            class="tag is-light">jQuery</span><span class="tag is-light">Pug</span><span class="tag is-light">Stylus</span><span
-            class="tag is-light">SASS/SCSS</span><span class="tag is-light">Webpack</span><span class="tag is-light">Git</span><span
-            class="tag is-light">ASP.NET Web Forms</span><span class="tag is-light">MSSQL</span><span class="tag is-light">MongoDB</span><span
-            class="tag is-light">Apache Cordova</span><span class="tag is-light">Chrome Extensions</span>
-        </div> -->
 
 
     <section class="section" id="publications">
-        <div class="container">
-            <div class="section-heading">
-                <h3 class="title is-2">Publications</h3>
-                <br>
-            </div>
-            <!-- start resume ordered list -->
-            <ol reversed>
-              <li>(Submitted) <b>Kroeger, N. M.</b>, Ley, D., Krishna, S., Agarwal, C., Lakkaraju, H. (2023). <a hred="https://arxiv.org/abs/2310.05797" target="_blank">Are Large Language Models Post Hoc Explainers?</a></li>
-              <li>Meerdink, S., Bocinsky, J., Zare, A., <b>Kroeger, N. M.</b>, McCurley, C., Shats, D., & Gader, P. (2022). <a href="https://doi.org/10.1109/TGRS.2021.3060966" target="_blank">Multitarget Multiple-Instance Learning for Hyperspectral Target Detection.</a> IEEE Transactions on Geoscience and Remote Sensing, 60, 1–14. </li>
-              <li>Koelmel, J. P., Tan, W. Y., Li, Y., Bowden, J. A., Ahmadireskety, A., Patt, A. C., Orlicky, D. J., Mathé, E., <b>Kroeger, N. M.</b>, Thompson, D. C., Cochran, J. A., Golla, J. P., Kandyliari, A., Chen, Y., Charkoftaki, G., Guingab-Cagmat, J. D., Tsugawa, H., Arora, A., Veselkov, K., … Vasilou, V. (2021). <a href="https://doi.org/10.1002/hep4.1825" target="_blank">Lipidomics and Redox Lipidomics Indicate Early Stage Alcohol-Induced Liver Damage.</a> Hepatology Communications. </li>
-              <li>Koelmel, J. P., Paige, M. K., Aristizabal-Henao, J. J., Robey, N. M., Nason, S. L., Stelben, P. J., Li, Y., <b>Kroeger, N. M.</b>, Napolitano, M. P., Savvaides, T., Vasiliou, V., Rostkowski, P., Garrett, T. J., Lin, E., Deigl, C., Jobst, K., Townsend, T. G., Godri Pollitt, K. J., & Bowden, J. A. (2020). <a href="https://doi.org/10.1021/acs.analchem.0c01591" target="_blank">Toward Comprehensive Per- and Polyfluoroalkyl Substances Annotation Using FluoroMatch Software and Intelligent High-Resolution Tandem Mass Spectrometry Acquisition.</a> Analytical Chemistry, 92(16), 11186–11194.  </li>
-              <li>Koelmel, J. P., <b>Kroeger, N. M.</b>, Ulmer, C. Z., Bowden, J. A., Patterson, R. E., Cochran, J. A., Beecher, C. W. W., Garrett, T. J., & Yost, R. A. (2017). <a href="https://doi.org/10.1186/s12859-017-1744-3" target="_blank">LipidMatch: An automated workflow for rule-based lipid identification using untargeted high-resolution tandem mass spectrometry data.</a> BMC Bioinformatics, 18(1). </li>
-              <li>Koelmel, J. P., <b>Kroeger, N. M.</b>, Gill, E. L., Ulmer, C. Z., Bowden, J. A., Patterson, R. E., Yost, R. A., & Garrett, T. J. (2017). <a href="https://doi.org/10.1007/s13361-017-1608-0" target="_blank">Expanding Lipidome Coverage Using LC-MS/MS Data-Dependent Acquisition with Automated Exclusion List Generation.</a> Journal of The American Society for Mass Spectrometry, 28(5), 908–917. </li>
+      <div class="container">
+          <div class="section-heading">
+              <h3 class="title is-2">Publications</h3>
+              <br>
+          </div>
+          <!-- start resume ordered list -->
+          <ol reversed>
+              <li><b>Kroeger, N. M.</b>, Ley, D., Krishna, S., Agarwal, C., Lakkaraju, H. (2023). <a href="https://arxiv.org/abs/2310.05797" target="_blank">In-Context Explainers: Harnessing LLMs for Explaining Black Box Models.</a> arXiv preprint arXiv:2310.05797. (Citations: 30)</li>
+              <li>Meerdink, S., Bocinsky, J., Zare, A., <b>Kroeger, N. M.</b>, McCurley, C., Shats, D., & Gader, P. (2021). <a href="https://doi.org/10.1109/TGRS.2021.3060966" target="_blank">Multitarget Multiple-Instance Learning for Hyperspectral Target Detection.</a> IEEE Transactions on Geoscience and Remote Sensing, 60, 1–14.</li>
+              <li>Koelmel, J. P., Tan, W. Y., Li, Y., Bowden, J. A., Ahmadireskety, A., Patt, A. C., <b>Kroeger, N. M.</b>, et al. (2022). <a href="https://doi.org/10.1002/hep4.1825" target="_blank">Lipidomics and Redox Lipidomics Indicate Early Stage Alcohol-Induced Liver Damage.</a> Hepatology Communications, 6(3), 513-525.</li>
+              <li>Koelmel, J. P., Paige, M. K., Aristizabal-Henao, J. J., Robey, N. M., Nason, S. L., <b>Kroeger, N. M.</b>, et al. (2020). <a href="https://doi.org/10.1021/acs.analchem.0c01591" target="_blank">Toward Comprehensive Per- and Polyfluoroalkyl Substances Annotation Using FluoroMatch Software and Intelligent High-Resolution Tandem Mass Spectrometry Acquisition.</a> Analytical Chemistry, 92(16), 11186–11194.</li>
+              <li>Koelmel, J. P., <b>Kroeger, N. M.</b>, Ulmer, C. Z., Bowden, J. A., Patterson, R. E., et al. (2017). <a href="https://doi.org/10.1186/s12859-017-1744-3" target="_blank">LipidMatch: An Automated Workflow for Rule-Based Lipid Identification Using Untargeted High-Resolution Tandem Mass Spectrometry Data.</a> BMC Bioinformatics, 18, 1–11.</li>
+              <li>Koelmel, J. P., <b>Kroeger, N. M.</b>, Gill, E. L., Ulmer, C. Z., Bowden, J. A., et al. (2017). <a href="https://doi.org/10.1007/s13361-017-1608-0" target="_blank">Expanding Lipidome Coverage Using LC-MS/MS Data-Dependent Acquisition with Automated Exclusion List Generation.</a> Journal of the American Society for Mass Spectrometry, 28(5), 908–917.</li>
+          </ol>
+      </div>
 
-            </ol>
-        </div>
-    </section>
+      <div class="buttons-container">
+      <a href="https://scholar.google.com/citations?user=xyz" target="_blank" class="button is-link is-medium">
+        <span class="icon"><i class="fas fa-book"></i></span>
+        <span>View All Publications</span>
+      </a>
+    </div>
+
+  </section>
 
 
-
-    <div class="card-tutoring-container">
+    <section class="section" id="tutoring">
+    <div class="container card-tutoring-container">
       <div class="section-heading">
-          <h3 class="title is-2">Tutoring and Mentoring</h3>
+        <h3 class="title is-2">Tutoring and Mentoring</h3>
+        <p class="subtitle is-4">Personalized 1-on-1 learning experiences tailored to your needs.</p>
       </div>
       <div class="cards-container">
         <div class="card-tutoring">
-    <h2>Audience</h2>
-    <ul>
-      <li>6th-12th grade</li>
-      <li>Undergraduates</li>
-      <li>Graduates</li>
-      <li>Post-Graduate</li>
-    </ul>
-  </div>
+          <h2 class="card-title">Audience</h2>
+          <ul class="card-list">
+            <li>6th-12th grade</li>
+            <li>Undergraduates</li>
+            <li>Graduates</li>
+            <li>Post-Graduate</li>
+          </ul>
+        </div>
 
-  <div class="card-tutoring">
-    <h2>Content</h2>
-    <ul>
-      <li>Study Skills, College Prep, and Research Mentorship</li>
-      <li>Beginner to Advanced <b>Computer Programming</b> (Scratch, MATLAB, and Python) for Preteens to College Engineers</li>
-      <li>Beginner to Advanced <b>Machine Learning Tutoring</b></li>
-      <li>Custom curriculum</li>
-    </ul>
-  </div>
+        <div class="card-tutoring">
+          <h2 class="card-title">Content</h2>
+          <ul class="card-list">
+            <li>Study Skills, College Prep, and Research Mentorship</li>
+            <li>
+              Beginner to Advanced <b>Computer Programming</b> (Scratch, MATLAB, and Python) for Preteens to College Engineers
+            </li>
+            <li>Beginner to Advanced <b>Machine Learning Tutoring</b></li>
+            <li>Custom Curriculum</li>
+          </ul>
+        </div>
 
-  <div class="card-tutoring availability-pricing">
-    <h2>Availability & Pricing</h2>
-    <p><span>Mon-Fri</span> online, weekly or on-demand sessions (Pacific time zone)</p>
-    <p>Contact for pricing!</p>
-  </div>
-
+        <div class="card-tutoring availability-pricing">
+          <h2 class="card-title">Availability & Pricing</h2>
+          <p><span>Mon-Fri</span> online, weekly or on-demand sessions (Pacific time zone)</p>
+          <p>Contact for pricing!</p>
+        </div>
       </div>
-      <div class="cta-buttons">
 
-        <a href="https://forms.gle/gcySQ1wga9oaysg77" target="_blank">
-          <button class="register">Register for Tutoring</button>
+      <div class="buttons-container">
+        <a href="https://forms.gle/gcySQ1wga9oaysg77" target="_blank" class="button is-link is-medium">
+          <span class="icon"><i class="fas fa-edit"></i></span>
+          <span>Register for Tutoring</span>
         </a>
-        <a href="mailto:nkroeger.cs@gmail.com">
-          <button class="contact">Email Nick</button>
+        <a href="mailto:nkroeger.cs@gmail.com" class="button is-link is-medium">
+          <span class="icon"><i class="fas fa-envelope"></i></span>
+          <span>Email Nick</span>
         </a>
       </div>
     </div>
+  </section>
 
-<!--
-    <div class="container">
-  <h1>Tutoring and Mentoring</h1>
-  <div class="section audience">
-    <h2>Audience</h2>
-    <ul>
-      <li>6th-12th grade</li>
-      <li>Undergraduates</li>
-      <li>Graduates</li>
-      <li>Post-Graduate</li>
-    </ul>
-  </div>
-  <div class="section experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>Teaching 9-14 year olds the fundamentals of computer programming</li>
-      <li>Mentoring students for college prep, time management, goal setting etc.</li>
-      <li>Tutoring in basics of machine learning (ML) and state of the art ML models</li>
-      <li>Teaching MATLAB to engineering undergrads</li>
-      <li>Mentoring undergrads in machine learning research projects</li>
-    </ul>
-  </div>
-  <div class="section availability">
-    <h2>Availability</h2>
-    <p>Weekdays, Pacific Timezone</p>
-    <p>ONLINE for weekly or on-demand sessions!</p>
-  </div>
-  <div class="section pricing">
-    <h2>Pricing</h2>
-    <p>Prices range relative to topic and difficulty.</p>
-  </div>
-  <div class="cta-buttons">
-    <button class="register">Register for Tutoring</button>
-    <button class="contact">Contact Nick</button>
-  </div>
-</div> -->
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const burger = document.querySelector(".navbar-burger");
+      const menu = document.querySelector("#navbarBasicExample");
 
-
-<!--
-        <section class="section" id="tutoring">
-            <div class="container">
-                <div class="section-heading">
-                    <h3 class="title is-2">Tutoring and Mentoring</h3>
-                </div>
-
-              <div style="margin: auto; width: 100%;">
-
-                <div class="info-block small">
-                  <h2 class="title is-4">Audience</h2>
-                    <div>
-                      <li>6th-12th grade</li>
-                      <li>Undergraduates</li>
-                      <li>Graduates</li>
-                      <li>Post-Graduate</li>
-                    </div>
-                  </br>
-                </div>
-
-                <div class="info-block large">
-                  <h2 class="title is-4">Experience</h2>
-                  <p>
-                    I'm a passionate life-long learner and I have experience... <br>
-                   	&#10004; teaching 9-14 year olds the fundamentals of computer programming, <br>
-                    &#10004; mentoring students for college prep, time management, goal setting etc., <br>
-                    &#10004; tutoring in basics of machine learning (ML) and state of the art ML models, <br>
-                    &#10004; teaching MATLAB to engineering undergrads, <br>
-                    &#10004; mentoring undergrads in machine learning research projects. <br><br>
-
-                    Need help improving grades or bridging the gap between theory and practice? <br>
-
-                  </p>
-                </div>
-
-                <div class="InfoBlocks">
-                  <h2 class="title is-4">Availability</h2>
-                    <p>Weekdays, Pacific Timezone</p>
-                    <br>
-                    <p>ONLINE for weekly or on-demand sessions!</p>
-                    <br>
-                    <h2 class="title is-4">Pricing</h2>
-                    <div>
-                      Prices range relative to topic and difficulty.
-                    </div>
-
-                </div>
-
-            </div>
-
-            <div style="text-align: center">
-              <a href="https://forms.gle/gcySQ1wga9oaysg77" target="_blank" class="bn3637 bn37">Contact Nick</a>
-            </div>
-
-<br> -->
-              <!-- <br><br><br><br><br><br><br><br><br><br><br><br> -->
-
-<!--
-            <div class"X">
-              <ul class="SG">
-
-                <li class="sgLi">
-                  <div class="box" style="max-height:275px">
-                 <h3><b>MACHINE LEARNING</b></h3>
-                 <ul class="s2">
-                  <li>Personalized Projects</li>
-                  <li>Beginner to Advanced</li>
-                  <li><b>Data:</b> Audio, Images, Text, & Tabular</li>
-                  <li><b>Topics:</b> Neural Networks, Clustering, <br> Dimensionality Reduction, Data Cleaning, <br> Evaluation, Experiment Design, etc. </li>
-                 </ul>
-                </div>
-               </li>
-
-               <li class="sgLi">
-                 <div class="box" style="max-height:275px">
-                <h3><b>COMPUTER SCIENCE</b></h3>
-                <ul class="s2">
-                 <li>Personalized Projects</li>
-                 <li>Beginner to Advanced</li>
-                 <li>Data Structures</li>
-                 <li>Algorithms</li>
-                 <li>Interview Questions</li>
-                 <li>Python, MATLAB, Java, R</li>
-                </ul>
-               </div>
-              </li>
-
-              <li class="sgLi">
-                <div class="box"  style="max-height:275px">
-               <h3><b>MATH</b></h3>
-               <ul class="s2">
-                <li>Pre-Calculus</li>
-                <li>Algebra 1 & 2</li>
-                <li>Calculus 1 & 2</li>
-                <li>Geometry</li>
-                <li>Logic</li>
-                <li>Linear Algebra</li>
-               </ul>
-              </div>
-             </li>
-
-             <li class="sgLi">
-               <div class="box" style="max-height:210px">
-              <h3><b>Mentoring</b></h3>
-              <ul class="s2">
-               <li>Advance your Career</li>
-               <li>Gain Valuable Advice</li>
-               <li>Develop Communication Skills</li>
-               <li>Learn New Perspectives</li>
-              </ul>
-             </div>
-            </li>
-
-           </ul>
-           <br>
-           <div style="text-align: center">
-             <a href="https://forms.gle/gcySQ1wga9oaysg77" target="_blank" class="bn3637 bn37">Register for Tutoring</a>
-           </div>
-
-         </div>-->
-
-
-        </section>
-
-<!-- putting script for convenient comment -->
-<script> /***
-    <!-- What am I Reading? -->
-    <section class="section" id="learning">
-        <!-- Title -->
-        <div class="section-heading">
-            <h3 class="title is-2">What am I learning?</h3>
-        </div>
-
-        <div class="columns has-same-height is-gapless">
-            <div class="column">
-                <!-- Profile -->
-                <div class="card">
-                    <div class="card-content">
-                        <div class="content">
-                            <table class="table-profile">
-                                <tr>
-                                    <th style="width:250px" colspan="1"></th>
-                                    <th colspan="2"></th>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        <h3 class="title is-4">June 2020</h3>
-                                    </td>
-                                    <td>
-                                        <ul type="circle">
-                                            <li>I. Oluo, <i>So you want to talk about race</i></li>
-
-                                            <br>
-
-                                            <li>J. Kerekes, <i>Receiver Operating Characteristic Curve Confidence Intervals and Regions</i></li>
-                                            <li>F. Doshi-Velez and B. Kim, <i>Towards A Rigorous Science of Interpretable Machine Learning</i></li>
-                                            <li>L. H. Gilpin, D. Bau, B. Z. Yuan, A. Bajwa, M. Specter, and L. Kagal, <i>Explaining Explanations: An Overview of Interpretability of Machine Learning</i></li>
-                                            <li>A. Abdul, J. Vermeulen, D. Wang, B. Y. Lim, and M. Kankanhalli, <i>Trends and Trajectories for Explainable, Accountable and Intelligible Systems: An HCI Research Agenda</i></li>
-                                            <li>R. Guidotti, A. Monreale, S. Ruggieri, F. Turini, F. Giannotti, and D. Pedreschi, <i>A Survey of Methods for Explaining Black Box Models</i></li>
-                                            <li>Z. C. Lipton, <i>The Mythos of Model Interpretability</i></li>
-                                            <li>Biran, Or, and Courtenay V. Cotton. <i>Explanation and Justification in Machine Learning: A Survey</i></li>
-                                            <li>Rudin, C., & Radin, J. <i>Why Are We Using Black Box Models in AI When We Don’t Need To? A Lesson From An Explainable AI Competition.</i></li>
-
-                                            <br>
-
-                                            <li><a href="https://www.youtube.com/watch?v=MMxZlr_L6YE">F. Doshi-Velez, <i>Finale Doshi-Velez: ‘A Roadmap for the Rigorous Science of Interpretability’ | Talks at Google.</i></a></li>
-                                            <li><a href="https://blogs.sas.com/content/subconsciousmusings/2017/12/18/interpretability-crucial-trusting-ai-machine-learning/"><i>Interpretability is crucial for trusting AI and machine learning,</i> The
-                                                    SAS Data Science Blog.</a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=4lIr8rgo5zE">F. Doshi-Velez, <i>The Possibility of Explanation | Finale Doshi-Velez | TEDxBoston.</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=r0RFruTHkF8&list=PLFze15KrfxbE5jd5L4prQXwkUcSdwRboo&index=9"><i>Trusting Machine Learning Models with LIME.</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=YrlWq0oFZ50&list=LLfUgL_ebdVImA6esPVCNxpQ&index=8&t=0s">R. Fong, <i>CVPR’20 iMLCV tutorial: Understanding Deep Neural Networks by Ruth C. Fong.</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=jIXIuYdnyyk&list=LLfUgL_ebdVImA6esPVCNxpQ&index=22&t=0s">A. Narayanan, <i>Translation Tutorial: 21 fairness definitions and their politics.</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=xSViWMPF7tE&list=LLfUgL_ebdVImA6esPVCNxpQ&index=29&t=0s">B. Kim, <i>Bayesian Case Model.</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=jXkhcoZ9W24"> B. Kim, <i>How to Fail Interpretability Research</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=iDulhoQ2pro"> Y. Kilcher, <i>Attention Is All You Need</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=S27pHKBEp30"> L. Dirac, <i>LSTM is dead. Long Live Transformers!</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=Uumd2zOOz60"> Y. Kilcher, <i>How I Read a Paper: Facebook's DETR (Video Tutorial): End-to-End Object Detection with Transformers</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=0ZErqh2kE4w"> A. Maier, <i>Deep Learning: Recurrent Neural Networks</i></a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=oMwF9CJGbwg"> <i>Interpreting Interpretability: Understanding Data Scientists' User of Interpretability Tools for Machine Learning</i></a></li>
-                                        </ul>
-                                </tr> <!-- June 2020  -->
-
-                                <tr>
-                                    <td>
-                                        <h3 class="title is-4">July 2020</h3>
-                                    </td>
-                                    <td>
-                                        <ul type="circle">
-                                            <li>B. Ramsundar, <i>Deep Learning for the Life Sciences</i></li>
-                                            <li>B. Shickel, <i>DeepSOFA: A Continuous Acuity Score for Critically Ill Patients using Clinically Interpretable Deep Learning</i> </li>
-                                            <li>G. Montavon, <i>Methods for Interpreting and Understanding Deep Neural Networks</i> </li>
-                                            <li>S. Becker, <i>Interpreting and Explaining Deep Neural Networks for Classification of Audio Signals</i> </li>
-                                            <li>Y. Sha, <i>Interpretable Predictions of Clinical Outcomes with An Attention-based Recurrent Neural Network</i> </li>
-                                            <li>P. Chalasani, <i>Concise Explanations of Neural Networks using Adversarial Training</i> </li>
-                                            <li>S. Chang, <i>Invariant Rationalization</i> </li>
-
-                                            <br>
-
-                                            <li><a href="https://www.youtube.com/watch?v=GNhcY6fTyBM"> <i>Allegories on race and racism | Camara Jones | TEDxEmory</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=iDulhoQ2pro&t=1s"> <i> Attention Is All You Need</i> </a></li>
-                                            <li><a href="https://youtu.be/S27pHKBEp30"> <i>LSTM is dead. Long Live Transformers!</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=Uumd2zOOz60&t=1s"> <i>How I Read a Paper: Facebook's DETR (Video Tutorial)</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=0ZErqh2kE4w&t=1s"> <i>Deep Learning: Recurrent Neural Networks</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=McoDjOCb2Zo"> <i>Python Online Multiplayer Game Development Tutorial</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=W1zPtTt43LI"> <i>How to write a good review? - CVPR 2020 Tutorial</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=A0a1M61gjgI"> <i>Meta Learning, part 1 - Yee Whye Teh - MLSS 2020, Tübingen</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=3jT1qJ8ETzk"> <i>SupSup: Supermasks in Superposition (Paper Explained)</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=Y40Wy1guAiQ"> <i>Excel Journal Database</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=qFRfnIRMNlk"> <i>SpineNet: Learning Scale-Permuted Backbone for Recognition and Localization (Paper Explained)</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=JEYLfIVvR9I"> <i>It had to be U - the SVD song</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=xSCy3q2ts44"> <i>RNN W1L09 : Gated Recurrent Unit GRU</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=6PP2s9emnXk"> <i>Read along RNN - LSTM Olah's blog Part 1</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=8HyCNIVRbSU"> <i>Illustrated Guide to LSTM's and GRU's: A step by step explanation</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=QciIcRxJvsM"> <i>LSTM Networks - EXPLAINED!</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=lWkFhVq9-nc"> <i>Recurrent Neural Network (RNN) Tutorial | RNN LSTM Tutorial | Deep Learning Tutorial | Simplilearn</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=IUaqeoMK5y4"> <i>Part 2: 1-D Reciprocal Space - G. Jensen</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=OESy_ltOCvI"> <i>Part 2: 1-D Sine Waves and Their Sums - G. Jensen</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=fEyLh9HqsWU"> <i>Part 2: 2-D Transforms and Filters - G. Jensen</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=MQm6ZP1F6ms"> <i>Part 2: Convolution and Cross-Correlation - G. Jensen</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=sYRUYJYOpG0"> <i>Stratified Sampling</i> </a></li>
-                                        </ul>
-                                </tr> <!-- July 2020  -->
-
-                                <tr>
-                                    <td>
-                                        <h3 class="title is-4">August 2020</h3>
-                                    </td>
-                                    <td>
-                                        <ul type="circle">
-                                            <li>K. Dhamdhere, <i>The Shapley Taylor Interaction Index</i></li>
-                                            <li>J. Adebayo, <i>Sanity Checks for Saliency Maps</i></li>
-                                            <li>W. Murdoch, <i>Definitions, methods, and applications in interpreatble machine learning</i></li>
-                                            <li>M. Cook, <i>Outlier Detection through Null Space Analysis of Neural Networks</i></li>
-
-                                            <br>
-
-                                            <li><a href="https://www.youtube.com/watch?v=8YV8KmfBbBM"> <i>Learn Japanese in 4 Hours - ALL the Japanese Basics You Need</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=6p9Il_j0zjc"> <i>Learn ALL Hiragana in 1 Hour - How to Write and Read Japanese</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=jCwRV1QL_Xs"> <i>Introduction to the null space of a matrix | Vectors and spaces | Linear Algebra | Khan Academy</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=_uTAdf_AsfQ"> <i>Null space and column space basis | Vectors and spaces | Linear Algebra | Khan Academy</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=qvyboGryeA8"> <i>Null space 2: Calculating the null space of a matrix | Linear Algebra | Khan Academ</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=hQAHSlTtcmY"> <i>Learn React In 30 Minutes</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=W6NZfCO5SIk"> <i>JavaScript Tutorial for Beginners: Learn JavaScript in 1 Hour [2020]</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=fdDQSHyyUic"> <i>How Understanding Conflict Can Help Improve Our Lives | Robin Funsten | TEDxTryon</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=YyhOT3jCcR4"> <i>TEDxHampshireCollege - Jim Ferrell - Resolving the Heart of Conflict</i> </a></li>
-                                        </ul>
-                                </tr> <!-- August 2020  -->
-
-                                <tr>
-                                    <td>
-                                        <h3 class="title is-4">September 2020</h3>
-                                    </td>
-                                    <td>
-                                        <ul type="circle">
-                                            <li>J. Gleick, <i>The Information A History, A Theory, A Flood</i></li>
-
-                                            <br>
-
-                                            <li>N. Homdee, <i>Actionable Interpretation of Machine Learning Models for Sequential Data: Dementia-related Agitation Use Case</i></li>
-                                            <li>E. Choi, <i>RETAIN: An Interpretable Predictive Model for Healthcare using Reverse Time Attention Mechanism</i></li>
-                                            <li>M. Du, <i>On Attribution of Recurrent Neural Network Predictions via Additive Decomposition</i></li>
-                                            <li>G. Goh, <i>SMILES2vec An Interpretable General-Purpose Deep Neural Network for Predicting Chemical Properties</i></li>
-                                            <li>T. Guo, <i>Exploring Interpretable LSTM Neural Networks over Multi-Variable Data</i></li>
-                                            <li>E. Marchi, <i>Deep Recurrent Neural Network-Based Autoencoders for Acoustic Novelty Detection</i></li>
-                                            <li>M. Ribeiro, <i>"Why Should I Trust You?" Explaining the Predictions of Any Classifier</i></li>
-                                            <li>S. Lundberg, <i>A Unified Approachh to Interpreting Model Predictions</i></li>
-                                            <li>M. Ribeiro, <i>Model-Agnostic Interpretability of Machine Learning</i></li>
-
-                                            <br>
-
-                                            <li><a href="https://www.youtube.com/watch?v=vz_fkVkoGFM"> <i>Interpretable Machine Learning with LIME - How LIME works? 10 Min. Tutorial with Python Code</i> </a></li>
-                                            <li><a href="https://www.youtube.com/watch?v=CY3t11vuuOM"> <i>Interpretable Machine Learning Using LIME Framework - Kasia Kulma (PhD), Data Scientist, Aviva</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=5-2C4eO4cPQ"> <i>Time Series Talk : Autoregressive Model</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=kp33ZprO0Ck"> <i>How a Microwave Oven Works</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=6niqTuYFZLQ"> <i>Lecture 10 | Recurrent Neural Networks</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=SEnXr6v2ifU"> <i>Recurrent Neural Networks | MIT 6.S191</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=OyFJWRnt_AY"> <i>CS480/680 Lecture 19: Attention and Transformer Networks</i> </a> </li>
-                                            <li><a href="https://www.youtube.com/watch?v=iDulhoQ2pro"> <i>Attention Is All You Need</i> </a> </li>
-
-                                        </ul>
-                                </tr> <!-- September 2020  -->
-
-
-                            </table>
-                        </div>
-                        <br>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-  ***/</script>
-
-
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="section-heading">
-            <p>
-                <strong>Bulma Template</strong> by <a href="https://mubaidr.js.org">Muhammad Ubaid Raza</a>. Licensed by
-                <a href="http://opensource.org/licenses/mit-license.php">MIT</a>.
-            </p>
-        </div>
-    </footer>
+      burger.addEventListener("click", () => {
+        burger.classList.toggle("is-active");
+        menu.classList.toggle("is-active");
+      });
+    });
+  </script>
 </body>
 
 </html>
